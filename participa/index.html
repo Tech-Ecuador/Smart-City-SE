@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <script>if(/[?&]embed=1/.test(location.search))document.documentElement.classList.add("embed");</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0a1f3a" />
+  <meta name="description" content="Santa Elena Participa: plataforma digital de participación ciudadana y observatorio provincial. Tu voz construye provincia. (DEMO tecnológica)" />
+  <title>Santa Elena Participa · Tu voz construye provincia</title>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#app">Saltar al contenido</a>
+
+  <div class="demo-bar" id="demo-bar"><span class="badge badge-demo">DEMO</span> Versión de demostración tecnológica · los datos marcados como DEMO son ficticios</div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#/" class="logo" aria-label="Santa Elena Participa - Inicio">
+        <span class="logo-mark" data-icon="map-pin" data-size="22"></span>
+        <span class="logo-text"><strong>Santa Elena</strong><span>Participa</span></span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú"></button>
+      <nav class="site-nav" id="nav" aria-label="Navegación principal">
+        <a href="#/encuestas" data-route="encuestas">Encuestas</a>
+        <a href="#/mapa" data-route="mapa">Mapa</a>
+        <a href="#/reportes" data-route="reportes">Reportes</a>
+        <a href="#/observatorio" data-route="observatorio">Observatorio</a>
+        <a href="#/proyectos" data-route="proyectos">Proyectos</a>
+        <a href="#/emprendedores" data-route="emprendedores">Emprendedores</a>
+        <a href="#/presupuesto" data-route="presupuesto">Presupuesto</a>
+        <a href="#/admin" data-route="admin" class="btn btn-primary">Ingresar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#/" class="logo light">
+          <span class="logo-mark" data-icon="map-pin" data-size="22"></span>
+          <span class="logo-text"><strong>Santa Elena</strong><span>Participa</span></span>
+        </a>
+        <p style="margin-top:14px">“Tu voz construye provincia”.</p>
+        <p class="small" style="margin-top:8px;color:#94a3b8">Plataforma de participación ciudadana y observatorio provincial de Santa Elena, Ecuador. Versión DEMO tecnológica.</p>
+      </div>
+      <div>
+        <h3>Módulos</h3>
+        <ul>
+          <li><a href="#/encuestas">Encuestas ciudadanas</a></li>
+          <li><a href="#/mapa">Mapa interactivo</a></li>
+          <li><a href="#/reportes">Reportes ciudadanos</a></li>
+          <li><a href="#/observatorio">Observatorio provincial</a></li>
+          <li><a href="#/proyectos">Proyectos y propuestas</a></li>
+          <li><a href="#/emprendedores">Directorio de emprendedores</a></li>
+          <li><a href="#/presupuesto">Presupuesto participativo</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Información institucional</h3>
+        <ul>
+          <li><a href="#/privacidad">Política de privacidad y protección de datos</a></li>
+          <li class="small" style="color:#94a3b8">Los resultados de encuestas abiertas no son muestras estadísticamente representativas ni constituyen asignación presupuestaria oficial.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> Santa Elena Participa · Los datos con etiqueta DEMO son ficticios.</div>
+  </footer>
+
+  <div id="toasts" aria-live="polite"></div>
+
+  <noscript><div style="padding:20px;text-align:center">Esta plataforma requiere JavaScript.</div></noscript>
+
+  <!-- Librerías locales (funcionan sin internet, excepto los mosaicos del mapa) -->
+  <script src="vendor/leaflet/leaflet.js"></script>
+  <script src="vendor/leaflet/leaflet-heat.js"></script>
+  <script src="vendor/chart/chart.umd.js"></script>
+  <!-- Aplicación -->
+  <script src="js/icons.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/pages/home.js"></script>
+  <script src="js/pages/surveys.js"></script>
+  <script src="js/pages/map.js"></script>
+  <script src="js/pages/reports.js"></script>
+  <script src="js/pages/observatory.js"></script>
+  <script src="js/pages/projects.js"></script>
+  <script src="js/pages/entrepreneurs.js"></script>
+  <script src="js/pages/budget.js"></script>
+  <script src="js/pages/admin.js"></script>
+  <script src="js/pages/privacy.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/embed.js"></script>
+</body>
+</html>

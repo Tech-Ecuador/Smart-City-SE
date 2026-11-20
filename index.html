@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0a2a7a">
+<title>Smart City Santa Elena · Prefectura Luis Orrala Rodas</title>
+<meta name="description" content="Smart City Santa Elena: sitio de Luis Orrala Rodas, candidato a la Prefectura de Santa Elena. Participación ciudadana, observatorio provincial y minijuegos educativos.">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body class="sitemode">
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="sh"><div class="sh-in">
+<a class="brand" href="#inicio" onclick="Site.nav('inicio');return false"><span class="b1">SMART CITY</span><span class="b2">SANTA ELENA</span><small>Prefectura · Luis Orrala Rodas</small></a>
+<button class="burger" id="bg" aria-label="Abrir menú" aria-expanded="false">☰</button>
+<nav id="nv" aria-label="Principal">
+<a href="#inicio" data-p="inicio" onclick="Site.nav('inicio');return false">Inicio</a>
+<a href="#perfil" data-p="perfil" onclick="Site.nav('perfil');return false">Perfil</a>
+<a href="#identidad" data-p="identidad" onclick="Site.nav('identidad');return false">Identidad y trabajo</a>
+<div class="dd"><button class="nb" aria-haspopup="true">🗳️ Participa ▾</button><div class="ddm">
+<button onclick="Site.px('')">Santa Elena Participa</button>
+<button onclick="Site.px('encuestas')">📋 Encuestas</button>
+<button onclick="Site.px('mapa')">🗺️ Mapa interactivo</button>
+<button onclick="Site.px('reportes')">📣 Reportes ciudadanos</button>
+<button onclick="Site.px('observatorio')">📈 Observatorio</button>
+<button onclick="Site.px('proyectos')">🏗️ Proyectos y propuestas</button>
+<button onclick="Site.px('emprendedores')">🧵 Emprendedores</button>
+<button onclick="Site.px('presupuesto')">💰 Presupuesto participativo</button>
+<button onclick="Site.px('admin')">🔐 Panel administrativo</button>
+<button onclick="Site.px('privacidad')">🛡️ Privacidad</button></div></div>
+<div class="dd"><button class="nb" aria-haspopup="true">🎮 Minijuegos ▾</button><div class="ddm">
+<button onclick="Site.nav('minijuegos')">Ver todos los minijuegos</button>
+<button onclick="Site.game('worlds')">🗺️ Guardianes de la Memoria</button>
+<button onclick="Site.game('surfMenu')">🏄 Surf Challenge</button>
+<button onclick="Site.game('playas')">🏖️ Explorador de las Playas</button>
+<button onclick="Site.game('puzzles')">🧩 Rompecabezas</button>
+<button onclick="Site.game('progress')">📊 Mi progreso</button></div></div>
+</nav></div></header>
+<div id="main"><main id="page"></main><div id="pxw" hidden><iframe id="pxf" title="Santa Elena Participa" allow="geolocation"></iframe></div><main id="app" hidden aria-live="polite"></main></div>
+<footer class="sf" id="sf"></footer>
+<div class="lb" id="lb" hidden onclick="this.hidden=true"></div>
+<script src="js/data.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/gl3d.js"></script>
+<script src="js/game3d.js"></script>
+<script src="js/puzzle.js"></script>
+<script src="js/surf.js"></script>
+<script src="js/playas.js"></script>
+<script src="js/app.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
